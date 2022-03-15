@@ -10,6 +10,6 @@ while write_indicator == 1:
     if string == '':
         write_indicator = 0
 
-with open('result.txt', 'w') as file_to_write:
+with open('result.txt', 'a+') as file_to_write:
     for string_ in string_to_write:
         print(string_, file = file_to_write)
