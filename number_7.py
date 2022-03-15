@@ -31,8 +31,6 @@ with open('number_7_read.txt', 'r') as file:
         profit_dict[key_] = profit_
         if profit_ >= 0:
             avg_list.append(float(re.split(' ', line)[2]) - float(re.split(' ', line)[3]))
-        else:
-            avg_list.append(0)
     avg_profit['average_profit'] = round(sum(avg_list)/len(avg_list), 2)
     final_list.append(profit_dict)
     final_list.append(avg_profit)
